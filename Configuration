@@ -1,0 +1,73 @@
+Worker Configuration 
+
+bootstrap.servers=<<bootstrap>>:9092
+
+group.id=example-100-cluster
+
+key.converter=org.apache.kafka.connect.json.JsonConverter
+value.converter=org.apache.kafka.connect.json.JsonConverter
+key.converter.schemas.enable=false
+value.converter.schemas.enable=false
+
+internal.key.converter=org.apache.kafka.connect.json.JsonConverter
+internal.value.converter=org.apache.kafka.connect.json.JsonConverter
+internal.key.converter.schemas.enable=false
+internal.value.converter.schemas.enable=false
+
+# Connect clusters create three topics to manage offsets, configs, and status
+# information. Note that these contribute towards the total partition limit quota.
+offset.storage.topic=connect-offsets
+offset.storage.replication.factor=3
+offset.storage.partitions=3
+
+config.storage.topic=connect-configs
+config.storage.replication.factor=3
+
+status.storage.topic=connect-status
+status.storage.replication.factor=3
+
+offset.flush.interval.ms=10000
+
+ssl.endpoint.identification.algorithm=https
+sasl.mechanism=PLAIN
+request.timeout.ms=20000
+retry.backoff.ms=500
+sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required \
+username="XXX" password="YYY";
+security.protocol=SASL_SSL
+
+consumer.ssl.endpoint.identification.algorithm=https
+consumer.sasl.mechanism=PLAIN
+consumer.request.timeout.ms=20000
+consumer.retry.backoff.ms=500
+consumer.sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required \
+username="XXX" password="YYY";
+consumer.security.protocol=SASL_SSL
+
+producer.ssl.endpoint.identification.algorithm=https
+producer.sasl.mechanism=PLAIN
+producer.request.timeout.ms=20000
+producer.retry.backoff.ms=500
+producer.sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required \
+username="XXX" password="YYY";
+producer.security.protocol=SASL_SSL
+
+plugin.path=/home/sudar-path/connectors
+
+rest.advertised.host.name=fluentaz-azccpl
+rest.advertised.port=8444
+rest.advertised.listener=https
+#rest.port=8444
+listeners=http://:8083,https://0.0.0.0:8444
+
+listeners.https.ssl.keystore.type= PKCS12
+listeners.https.ssl.truststore.type=PKCS12
+listeners.https.ssl.keystore.password=mypassword
+listeners.https.ssl.key.password=mypassword
+listeners.https.ssl.truststore.password=mypassword
+
+listeners.https.ssl.keystore.location=/home/sudarshan/tlsrest/keystore2/rest.server.keystore.jks
+listeners.https.ssl.truststore.location=/home/sudarshan/tlsrest/truststore2/rest.server.truststore.jks
+
+listeners.https.ssl.endpoint.identification.algorithm=HTTPS
+listeners.https.ssl.client.auth=required
