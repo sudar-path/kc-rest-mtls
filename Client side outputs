@@ -1,0 +1,90 @@
+sudarshan@dummy:~$ curl -vvvvv --cacert ~/ca2/ca-cert --key ~/cl2/client.key --cert ~/cl2/client.crt https://fluentaz-azccpl:8444/connectors/datagen-users/status | jq
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying 10.249.1.4...
+* TCP_NODELAY set
+* Connected to fluentaz-azccpl (10.249.1.4) port 8444 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: /home/sudarshan/ca2/ca-cert
+  CApath: /etc/ssl/certs
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [512 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [122 bytes data]
+* TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+{ [1 bytes data]
+* TLSv1.3 (IN), TLS handshake, Unknown (8):
+{ [32 bytes data]
+* TLSv1.3 (IN), TLS handshake, Request CERT (13):
+{ [75 bytes data]
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+{ [2252 bytes data]
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+{ [264 bytes data]
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+{ [36 bytes data]
+* TLSv1.3 (OUT), TLS change cipher, Client hello (1):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS Unknown, Certificate Status (22):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Certificate (11):
+} [2498 bytes data]
+* TLSv1.3 (OUT), TLS Unknown, Certificate Status (22):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, CERT verify (15):
+} [520 bytes data]
+* TLSv1.3 (OUT), TLS Unknown, Certificate Status (22):
+} [1 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+} [36 bytes data]
+* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: CN=fluentaz-azccpl
+*  start date: Mar  8 01:51:52 2021 GMT
+*  expire date: Mar  8 01:51:52 2022 GMT
+*  common name: fluentaz-azccpl (matched)
+*  issuer: CN=my-ca
+*  SSL certificate verify ok.
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS Unknown, Unknown (23):
+} [1 bytes data]
+> GET /connectors/datagen-users/status HTTP/1.1
+> Host: fluentaz-azccpl:8444
+> User-Agent: curl/7.58.0
+> Accept: */*
+>
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS Unknown, Certificate Status (22):
+{ [1 bytes data]
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+{ [50 bytes data]
+* TLSv1.3 (IN), TLS Unknown, Unknown (23):
+{ [1 bytes data]
+< HTTP/1.1 200 OK
+< Date: Sun, 14 Mar 2021 16:17:38 GMT
+< Content-Type: application/json
+< Content-Length: 179
+< Server: Jetty(9.4.33.v20201020)
+<
+{ [179 bytes data]
+100   179  100   179    0     0   2011      0 --:--:-- --:--:-- --:--:--  2034
+* Connection #0 to host fluentaz-azccpl left intact
+{
+  "name": "datagen-users",
+  "connector": {
+    "state": "RUNNING",
+    "worker_id": "fluentaz-azccpl:8444"
+  },
+  "tasks": [
+    {
+      "id": 0,
+      "state": "RUNNING",
+      "worker_id": "fluentaz-azccpl:8444"
+    }
+  ],
+  "type": "source"
+}
