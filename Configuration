@@ -62,9 +62,9 @@ listeners=http://:8083,https://0.0.0.0:8444
 
 listeners.https.ssl.keystore.type= PKCS12
 listeners.https.ssl.truststore.type=PKCS12
-listeners.https.ssl.keystore.password=mypassword
-listeners.https.ssl.key.password=mypassword
-listeners.https.ssl.truststore.password=mypassword
+listeners.https.ssl.keystore.password=ZZZZ
+listeners.https.ssl.key.password=ZZZZ
+listeners.https.ssl.truststore.password=ZZZZ
 
 listeners.https.ssl.keystore.location=/home/sudarshan/tlsrest/keystore2/rest.server.keystore.jks
 listeners.https.ssl.truststore.location=/home/sudarshan/tlsrest/truststore2/rest.server.truststore.jks
