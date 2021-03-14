@@ -2,5 +2,6 @@
 
 How to enable certificate based authentication for client access to the REST API of Kafka Connect
   * Configuration
-  * Outputs
+  * Client side outputs
+  * Server side outputs
 
