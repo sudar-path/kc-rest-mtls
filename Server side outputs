@@ -1,0 +1,226 @@
+Client hello
+
+"ClientHello": {
+  "client version"      : "TLSv1.2",
+  "random"              : "96 8D 9D A9 FA FB 30 83 8E 2E FE 52 F8 6F C8 28 6F 4D FA 10 01 BB 72 E0 D7 29 52 2F 30 B2 74 9A",
+  "session id"          : "96 28 40 7F 9F BD BC 1E D9 F0 2D 38 DB 88 3D 1B 77 B0 80 63 12 16 26 80 80 26 F6 9C D5 3A 3A A8",
+  "cipher suites"       : "[TLS_AES_256_GCM_SHA384(0x1302), TLS_CHACHA20_POLY1305_SHA256(0x1303), TLS_AES_128_GCM_SHA256(0x1301), TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384(0xC02C), TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384(0xC030), TLS_DHE_RSA_WITH_AES_256_GCM_SHA384(0x009F), UNKNOWN-CIPHER-SUITE(0xCCA9)(0xCCA9), UNKNOWN-CIPHER-SUITE(0xCCA8)(0xCCA8), UNKNOWN-CIPHER-SUITE(0xCCAA)(0xCCAA), TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256(0xC02B), TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256(0xC02F), TLS_DHE_RSA_WITH_AES_128_GCM_SHA256(0x009E), TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384(0xC024), TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384(0xC028), TLS_DHE_RSA_WITH_AES_256_CBC_SHA256(0x006B), TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256(0xC023), TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256(0xC027), TLS_DHE_RSA_WITH_AES_128_CBC_SHA256(0x0067), TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA(0xC00A), TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA(0xC014), TLS_DHE_RSA_WITH_AES_256_CBC_SHA(0x0039), TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA(0xC009), TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA(0xC013), TLS_DHE_RSA_WITH_AES_128_CBC_SHA(0x0033), TLS_RSA_WITH_AES_256_GCM_SHA384(0x009D), TLS_RSA_WITH_AES_128_GCM_SHA256(0x009C), TLS_RSA_WITH_AES_256_CBC_SHA256(0x003D), TLS_RSA_WITH_AES_128_CBC_SHA256(0x003C), TLS_RSA_WITH_AES_256_CBC_SHA(0x0035), TLS_RSA_WITH_AES_128_CBC_SHA(0x002F), TLS_EMPTY_RENEGOTIATION_INFO_SCSV(0x00FF)]",
+  "compression methods" : "00",
+  "extensions"          : [
+    "server_name (0)": {
+      type=host_name (0), value=fluentaz-azccpl
+    },
+    "ec_point_formats (11)": {
+      "formats": [uncompressed, ansiX962_compressed_prime, ansiX962_compressed_char2]
+    },
+    "supported_groups (10)": {
+      "versions": [x25519, secp256r1, x448, secp521r1, secp384r1]
+    },
+    "unknown extension (13,172)": {
+
+    },
+    "application_layer_protocol_negotiation (16)": {
+      [h2, http/1.1]
+    },
+    "encrypt_then_mac (22)": {
+
+    },
+    "extended_master_secret (23)": {
+      <empty>
+    },
+    "signature_algorithms (13)": {
+      "signature schemes": [ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512, ed25519, ed448, rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512, rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512, ecdsa_sha224, ecdsa_sha1, rsa_sha224, rsa_pkcs1_sha1, dsa_sha224, dsa_sha1, dsa_sha256, dsa_sha384, dsa_sha512]
+    },
+    "supported_versions (43)": {
+      "versions": [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1]
+    },
+    "psk_key_exchange_modes (45)": {
+      "ke_modes": [psk_dhe_ke]
+    },
+    "key_share (51)": {
+      "client_shares": [
+        {
+          "named group": x25519
+          "key_exchange": {
+            0000: 4E A3 01 57 D3 9C 04 DA   59 2C 80 3C 82 52 0A CE  N..W....Y,.<.R..
+            0010: 41 69 5A 0E 47 DB ED C3   8A D5 CD 4C F2 52 AA 71  AiZ.G......L.R.q
+          }
+        },
+      ]
+    },
+    "client_certificate_type (21)": {
+      0000: 00 00 00 00 00 00 00 00   00 00 00 00 00 00 00 00  ................
+      0010: 00 00 00 00 00 00 00 00   00 00 00 00 00 00 00 00  ................
+      0020: 00 00 00 00 00 00 00 00   00 00 00 00 00 00 00 00  ................
+      0030: 00 00 00 00 00 00 00 00   00 00 00 00 00 00 00 00  ................
+      0040: 00 00 00 00 00 00 00 00   00 00 00 00 00 00 00 00  ................
+      0050: 00 00 00 00 00 00 00 00   00 00 00 00 00 00 00 00  ................
+      0060: 00 00 00 00 00 00 00 00   00 00 00 00 00 00 00 00  ................
+      0070: 00 00 00 00 00 00 00 00   00 00 00 00 00 00 00 00  ................
+      0080: 00 00 00 00 00 00 00 00   00 00 00 00 00 00 00 00  ................
+      0090: 00 00 00 00 00 00 00 00   00 00 00 00 00 00 00 00  ................
+      00A0: 00 00 00 00 00 00 00 00   00 00 00 00 00 00 00 00  ................
+      00B0: 00 00                                              ..
+    }
+  ]
+}
+
+Server hello
+
+"ServerHello": {
+  "server version"      : "TLSv1.2",
+  "random"              : "22 62 54 8A 97 B1 03 49 66 CE 1B E9 73 E6 AF 22 11 45 4D 3F C1 25 26 EA 2B 35 FF 01 30 61 FF 33",
+  "session id"          : "96 28 40 7F 9F BD BC 1E D9 F0 2D 38 DB 88 3D 1B 77 B0 80 63 12 16 26 80 80 26 F6 9C D5 3A 3A A8",
+  "cipher suite"        : "TLS_AES_128_GCM_SHA256(0x1301)",
+  "compression methods" : "00",
+  "extensions"          : [
+    "supported_versions (43)": {
+      "selected version": [TLSv1.3]
+    },
+    "key_share (51)": {
+      "server_share": {
+        "named group": x25519
+        "key_exchange": {
+          0000: D5 E1 E1 C3 60 DA 59 EE   64 8B EA 56 E3 58 02 67  ....`.Y.d..V.X.g
+          0010: 11 57 18 40 A0 5E B2 78   41 86 1E 3D 1D 38 C7 1E  .W.@.^.xA..=.8..
+        }
+      },
+    }
+  ]
+}
+
+
+Server certificate
+
+"Certificate": {
+  "certificate_request_context": "",
+  "certificate_list": [
+  {
+    "certificate" : {
+      "version"            : "v1",
+      "serial number"      : "27 DF C3 06 3C BD 41 91 00 6C 12 17 1B 73 69 CE F3 7B 34 96",
+      "signature algorithm": "SHA256withRSA",
+      "issuer"             : "CN=my-ca",
+      "not before"         : "2021-03-08 01:51:52.000 UTC",
+      "not  after"         : "2022-03-08 01:51:52.000 UTC",
+      "subject"            : "CN=fluentaz-azccpl",
+      "subject public key" : "RSA"}
+    "extensions": {
+      <no extension>
+    }
+  },
+  {
+    "certificate" : {
+      "version"            : "v3",
+      "serial number"      : "5A 25 F7 B4 7C 9D 7C DC F4 52 91 2D 46 0B C1 44 B2 FE 2F 85",
+      "signature algorithm": "SHA256withRSA",
+      "issuer"             : "CN=my-ca",
+      "not before"         : "2021-03-06 20:26:26.000 UTC",
+      "not  after"         : "2022-03-06 20:26:26.000 UTC",
+      "subject"            : "CN=my-ca",
+      "subject public key" : "RSA",
+      "extensions"         : [
+        {
+          ObjectId: 2.5.29.35 Criticality=false
+          AuthorityKeyIdentifier [
+          KeyIdentifier [
+          0000: 72 52 E9 49 5E 05 66 86   F0 11 B9 90 3F 22 DB E7  rR.I^.f.....?"..
+          0010: 46 2A 12 B2                                        F*..
+          ]
+          ]
+        },
+        {
+          ObjectId: 2.5.29.19 Criticality=true
+          BasicConstraints:[
+            CA:true
+            PathLen:2147483647
+          ]
+        },
+        {
+          ObjectId: 2.5.29.14 Criticality=false
+          SubjectKeyIdentifier [
+          KeyIdentifier [
+          0000: 72 52 E9 49 5E 05 66 86   F0 11 B9 90 3F 22 DB E7  rR.I^.f.....?"..
+          0010: 46 2A 12 B2                                        F*..
+          ]
+          ]
+        }
+      ]}
+    "extensions": {
+      <no extension>
+    }
+  },
+]
+}
+
+Client certificate
+
+"Certificate": {
+  "certificate_request_context": "",
+  "certificate_list": [
+  {
+    "certificate" : {
+      "version"            : "v1",
+      "serial number"      : "27 DF C3 06 3C BD 41 91 00 6C 12 17 1B 73 69 CE F3 7B 34 95",
+      "signature algorithm": "SHA256withRSA",
+      "issuer"             : "CN=my-ca",
+      "not before"         : "2021-03-06 21:19:08.000 UTC",
+      "not  after"         : "2022-03-06 21:19:08.000 UTC",
+      "subject"            : "CN=dummy",
+      "subject public key" : "RSA"}
+    "extensions": {
+      <no extension>
+    }
+  },
+  {
+    "certificate" : {
+      "version"            : "v3",
+      "serial number"      : "5A 25 F7 B4 7C 9D 7C DC F4 52 91 2D 46 0B C1 44 B2 FE 2F 85",
+      "signature algorithm": "SHA256withRSA",
+      "issuer"             : "CN=my-ca",
+      "not before"         : "2021-03-06 20:26:26.000 UTC",
+      "not  after"         : "2022-03-06 20:26:26.000 UTC",
+      "subject"            : "CN=my-ca",
+      "subject public key" : "RSA",
+      "extensions"         : [
+        {
+          ObjectId: 2.5.29.35 Criticality=false
+          AuthorityKeyIdentifier [
+          KeyIdentifier [
+          0000: 72 52 E9 49 5E 05 66 86   F0 11 B9 90 3F 22 DB E7  rR.I^.f.....?"..
+          0010: 46 2A 12 B2                                        F*..
+          ]
+          ]
+        },
+        {
+          ObjectId: 2.5.29.19 Criticality=true
+          BasicConstraints:[
+            CA:true
+            PathLen:2147483647
+          ]
+        },
+        {
+          ObjectId: 2.5.29.14 Criticality=false
+          SubjectKeyIdentifier [
+          KeyIdentifier [
+          0000: 72 52 E9 49 5E 05 66 86   F0 11 B9 90 3F 22 DB E7  rR.I^.f.....?"..
+          0010: 46 2A 12 B2                                        F*..
+          ]
+          ]
+        }
+      ]}
+    "extensions": {
+      <no extension>
+    }
+  },
+]
+}
+
+End of TLS handshake
+
+"Finished": {
+  "verify data": {
+    0000: C7 34 EC 96 B7 EE 49 AD   83 8C B0 3A EF 1C DB 71  .4....I....:...q
+    0010: A3 18 EB 19 94 81 5F 22   55 C3 0D A7 F9 E4 7B 42  ......_"U......B
+  }'}
+
